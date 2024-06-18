@@ -1,7 +1,5 @@
-const express = require("express");
+import express from "express";
 const app = express();
-const port = 5000;
-const path = require("path");
 
 app.get("/", (req, res) => {
   console.log("Hello from express");
@@ -9,4 +7,4 @@ app.get("/", (req, res) => {
   res.json({ message: "Server created with Express.js" });
 });
 
-module.exports = app;
+export default app;
